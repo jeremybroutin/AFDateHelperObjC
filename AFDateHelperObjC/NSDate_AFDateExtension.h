@@ -19,7 +19,25 @@ typedef NS_ENUM(NSInteger, ISO8601Format) {
   DateTimeMilliSec
 };
 
+typedef NS_ENUM(NSInteger, DateFormat) {
+  ISO8601,
+  DotNet,
+  RSS,
+  AltRSS,
+  Custom
+};
+
 - (NSString*)ISO8601FormatTypeToString:(ISO8601Format)formatType;
 - (NSString*)ISO8601FormatFromString:(NSString*)dateString;
+
+#pragma mark Intervals in seconds
++ (double)minuteInSeconds;
++ (double)hourInSeconds;
++ (double)dayInSeconds;
++ (double)weekInSeconds;
++ (double)yearInSeconds;
+
+#pragma mark Components
++ (NSCalendarUnit)componentFlags;
 
 @end

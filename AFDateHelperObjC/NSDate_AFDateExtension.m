@@ -9,8 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "NSDate_AFDateExtension.h"
 
-// DotNet: "/Date(1268123281843)/"
-static NSString* const DefaultFormat = @"EEE MMM dd HH:mm:ss Z yyyy";
+static NSString* const DefaultFormat = @"EEE MMM dd HH:mm:ss Z yyyy"; // DotNet: "/Date(1268123281843)/"
 static NSString* const RSSFormat = @"EEE, d MMM yyyy HH:mm:ss ZZZ"; // "Fri, 09 Sep 2011 15:26:08 +0200"
 static NSString* const AltRSSFormat = @"d MMM yyyy HH:mm:ss ZZZ"; // "09 Sep 2011 15:26:08 +0200"
 
@@ -29,6 +28,7 @@ static NSString* const AltRSSFormat = @"d MMM yyyy HH:mm:ss ZZZ"; // "09 Sep 201
       break;
   }
 }
+
 - (NSString*)ISO8601FormatFromString:(NSString*)dateString {
   switch (dateString.length) {
     case 4: return [self ISO8601FormatTypeToString:Year];
@@ -39,5 +39,16 @@ static NSString* const AltRSSFormat = @"d MMM yyyy HH:mm:ss ZZZ"; // "09 Sep 201
     default: return [self ISO8601FormatTypeToString:DateTimeMilliSec];
   }
 }
+
++ (double)minuteInSeconds { return 60; }
++ (double)hourInSeconds { return 3600; }
++ (double)dayInSeconds { return 86400; }
++ (double)weekInSeconds { return 604800; }
++ (double)yearInSeconds { return 31556926; }
+
+//+ (NSCalendarUnit)componentFlags {
+//  return [NSArray arrayWithObjects:NSCalendarUnitYear, NSCalendarUnitMonth, NSCalendarUnitWeekOfMonth,
+//          NSCalendarUnitDay, nil];
+//}
 
 @end
