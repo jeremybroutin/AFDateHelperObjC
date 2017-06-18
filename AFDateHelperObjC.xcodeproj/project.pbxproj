@@ -13,6 +13,7 @@
 		E3D9667F1ED3B525008879AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D9667D1ED3B525008879AE /* Main.storyboard */; };
 		E3D966811ED3B525008879AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3D966801ED3B525008879AE /* Assets.xcassets */; };
 		E3D966841ED3B525008879AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D966821ED3B525008879AE /* LaunchScreen.storyboard */; };
+		E3DE5A201EF725DF00120598 /* NSDate_AFDateExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DE5A1F1EF725DF00120598 /* NSDate_AFDateExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E3D966801ED3B525008879AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3D966831ED3B525008879AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3D966851ED3B525008879AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3DE5A1E1EF7242400120598 /* NSDate_AFDateExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDate_AFDateExtension.h; sourceTree = "<group>"; };
+		E3DE5A1F1EF725DF00120598 /* NSDate_AFDateExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDate_AFDateExtension.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				E3D966821ED3B525008879AE /* LaunchScreen.storyboard */,
 				E3D966851ED3B525008879AE /* Info.plist */,
 				E3D966741ED3B525008879AE /* Supporting Files */,
+				E3DE5A1E1EF7242400120598 /* NSDate_AFDateExtension.h */,
+				E3DE5A1F1EF725DF00120598 /* NSDate_AFDateExtension.m */,
 			);
 			path = AFDateHelperObjC;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 				E3D9667C1ED3B525008879AE /* ViewController.m in Sources */,
 				E3D966791ED3B525008879AE /* AppDelegate.m in Sources */,
 				E3D966761ED3B525008879AE /* main.m in Sources */,
+				E3DE5A201EF725DF00120598 /* NSDate_AFDateExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +320,7 @@
 				E3D9668A1ED3B525008879AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
